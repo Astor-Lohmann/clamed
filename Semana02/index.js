@@ -89,3 +89,34 @@
 // }
 
 //Exercicio 09
+
+
+//Exercicio 10
+
+const totalnota = [];
+
+
+const sistemaNota = function () {
+    const nome = prompt("Digite seu nome")
+    i = 1
+    while (i <= 4) {
+        const nota = parseFloat(prompt("Digite a nota"))
+        totalnota.push(nota)
+        i++
+    }
+
+        let soma = 0;
+        for (i in totalnota) {
+            soma += totalnota[i]
+        }
+        const media = soma/totalnota.length
+
+    
+    if (media >= 7) {
+        document.write("<h4>Nome: </h4>" + nome + "</br>" + "<h4>Média: </h4>" + media + "<h3>Parabéns! Vocẽ foi aprovado!</h3>" )
+    } else if (media < 7 ) {
+        document.write("<h4>Nome: </h4>" + nome + "</br>" + "<h4>Média: </h4>" + media + "<h3>Que pena! Vocẽ foi reprovado!</h3>" )
+    }
+    }
+
+sistemaNota()
