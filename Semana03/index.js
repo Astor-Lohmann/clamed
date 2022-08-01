@@ -95,53 +95,53 @@
 
 //Exercicio 06
 
-function listaMercado() {
-    const input = document.getElementById("input1")
-    const item = input.value
+// function listaMercado() {
+//     const input = document.getElementById("input1")
+//     const item = input.value
 
 
-    const itemLista = document.createElement("li")
-    itemLista.innerText = item
+//     const itemLista = document.createElement("li")
+//     itemLista.innerText = item
     
-    const listaDoMercado = document.getElementById("input1")
-    listaDoMercado.appendChild(itemLista)
-}
+//     const listaDoMercado = document.getElementById("input1")
+//     listaDoMercado.appendChild(itemLista)
+// }
 
 //Exercicio 08
 
-// function adicionaMensagem(){
-//   const input = document.getElementById("input-mensagem")
-//   const valorDoInput = input.value
+function adicionaMensagem(){
+  const input = document.getElementById("input-mensagem")
+  const valorDoInput = input.value
 
-//   const mensagem = document.getElementById("aparece-mensagem")
-//   mensagem.innerHTML = valorDoInput
-// }
+  const mensagem = document.getElementById("aparece-mensagem")
+  mensagem.innerHTML = valorDoInput
+}
 
-// function salvaMensagem(){
-//   const input = document.getElementById("input-mensagem")
-//   const valorDoInput = input.value
-//   const mensagem = document.getElementById("aparece-mensagem")
-//   const valorDaMensagem = mensagem.innerHTML
+function salvaMensagem(){
+  const input = document.getElementById("input-mensagem")
+  const valorDoInput = input.value
+  const mensagem = document.getElementById("aparece-mensagem")
+  const valorDaMensagem = mensagem.innerHTML
 
 
-//   if (valorDoInput.length === 0 && valorDaMensagem.length === 0) {
-//     alert("Por favor, informe uma mensagem")
-//   }
-//   else {
-//     localStorage.setItem("mensagem", valorDoInput)
+  if (valorDoInput.length === 0 && valorDaMensagem.length === 0) {
+    alert("Por favor, informe uma mensagem")
+  }
+  else {
+    localStorage.setItem("mensagem", valorDoInput)
 
-//     alert("Mensagem salva com sucesso")
-//   }
-// }
+    alert("Mensagem salva com sucesso")
+  }
+}
 
-// function mostraMensagem() {
-//   const mensagemDoLocalStorage = localStorage.getItem("mensagem")
-//   const divApareceMensagem = document.getElementById("aparece-mensagem")
-//   if (mensagemDoLocalStorage === null) {
-//     divApareceMensagem.innerHTML = "Não há mensagem salva"
-//   }
-//   else {
+function mostraMensagem() {
+  const mensagemDoLocalStorage = localStorage.getItem("mensagem")
+  const divApareceMensagem = document.getElementById("aparece-mensagem")
+  if (mensagemDoLocalStorage === null) {
+    divApareceMensagem.innerHTML = "Não há mensagem salva"
+  }
+  else {
 
-//     divApareceMensagem.innerHTML = mensagemDoLocalStorage
-//   }
-// }
+    divApareceMensagem.innerHTML = mensagemDoLocalStorage
+  }
+}
